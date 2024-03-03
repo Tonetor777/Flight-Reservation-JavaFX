@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #caf0f8;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flight.AdminMainController">
+   <children>
+      <AnchorPane prefHeight="59.0" prefWidth="600.0" style="-fx-background-color: #020035;">
+         <children>
+            <Button fx:id="button_home" layoutX="712.0" layoutY="11.0" mnemonicParsing="false" onAction="#logOut" prefHeight="37.0" prefWidth="86.0" style="-fx-background-color: #ffc300;" text="LogOut">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_addflight" layoutX="202.0" layoutY="11.0" mnemonicParsing="false" onAction="#goToAddFlight" prefHeight="37.0" prefWidth="113.0" style="-fx-background-color: #ffc300;" text="Add Flight">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_reservation" layoutX="347.0" layoutY="11.0" mnemonicParsing="false" onAction="#goToReservations" prefHeight="37.0" prefWidth="133.0" style="-fx-background-color: #ffc300;" text="Reservations">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_createacc" layoutX="512.0" layoutY="11.0" mnemonicParsing="false" onAction="#goToCreateAccount" prefHeight="37.0" prefWidth="165.0" style="-fx-background-color: #ffc300;" text="Create Acccount">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_createacc1" layoutX="45.0" layoutY="11.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="126.0" style="-fx-background-color: #ffc300;" text="Profile">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="747.0" prefWidth="1000.0">
+         <children>
+            <Label layoutX="48.0" layoutY="46.0" text="First Name">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="93.0" text="Last Name">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="144.0" text="User Name">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="198.0" text="Email">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="248.0" text="Phone Number">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="first_name" layoutX="209.0" layoutY="46.0" prefHeight="23.0" prefWidth="154.0">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="last_name" layoutX="209.0" layoutY="93.0" prefHeight="23.0" prefWidth="154.0">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="user_name" layoutX="209.0" layoutY="144.0" prefHeight="23.0" prefWidth="154.0">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="email" layoutX="209.0" layoutY="198.0" prefHeight="23.0" prefWidth="259.0">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="phone_number" layoutX="216.0" layoutY="248.0" prefHeight="23.0" prefWidth="154.0">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="391.0" text="Change Password">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="458.0" text="Current Password">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="501.0" text="New Password">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="544.0" text="Confirm New Password">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="currentPasswordTextField" layoutX="317.0" layoutY="454.0" prefHeight="32.0" prefWidth="173.0" promptText="Current Password" />
+            <TextField fx:id="newPasswordTextField" layoutX="317.0" layoutY="497.0" prefHeight="32.0" prefWidth="173.0" promptText="New Password" />
+            <TextField fx:id="confirmNewPasswordTextField" layoutX="317.0" layoutY="540.0" prefHeight="32.0" prefWidth="173.0" promptText="Confirm New Password" />
+            <Button fx:id="button_change_Password" layoutX="317.0" layoutY="601.0" mnemonicParsing="false" onAction="#changePassword" prefHeight="37.0" prefWidth="173.0" style="-fx-background-color: #ffc300;" text="Change Password">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="message" layoutX="316.0" layoutY="415.0" prefHeight="17.0" prefWidth="173.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

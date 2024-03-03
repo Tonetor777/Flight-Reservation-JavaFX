@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flight.CreateAccountController">
+<children>
+    <AnchorPane prefHeight="59.0" prefWidth="1000.0" style="-fx-background-color: #020035;">
+        <children>
+            <Button fx:id="button_home" layoutX="712.0" layoutY="11.0" mnemonicParsing="false" onAction="#logOut" prefHeight="37.0" prefWidth="86.0" style="-fx-background-color: #ffc300;" text="LogOut">
+                <font>
+                    <Font name="Verdana Bold" size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="button_addflight" layoutX="202.0" layoutY="11.0" mnemonicParsing="false" onAction="#goToAddFlight" prefHeight="37.0" prefWidth="113.0" style="-fx-background-color: #ffc300;" text="Add Flight">
+                <font>
+                    <Font name="Verdana Bold" size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="button_reservation" layoutX="347.0" layoutY="11.0" mnemonicParsing="false" onAction="#goToReservations" prefHeight="37.0" prefWidth="133.0" style="-fx-background-color: #ffc300;" text="Reservations">
+                <font>
+                    <Font name="Verdana Bold" size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="button_createacc" layoutX="512.0" layoutY="11.0" mnemonicParsing="false" onAction="#goToCreateAccount" prefHeight="37.0" prefWidth="165.0" style="-fx-background-color: #ffc300;" text="Create Acccount">
+                <font>
+                    <Font name="Verdana Bold" size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="button_createacc1" layoutX="45.0" layoutY="11.0" mnemonicParsing="false" onAction="#goToProfile" prefHeight="37.0" prefWidth="126.0" style="-fx-background-color: #ffc300;" text="Profile">
+                <font>
+                    <Font name="Verdana Bold" size="15.0" />
+                </font>
+            </Button>
+        </children>
+    </AnchorPane>
+    <AnchorPane layoutX="121.0" layoutY="120.0" prefHeight="492.0" prefWidth="803.0">
+        <children>
+
+                <TextField fx:id="firstNameField" layoutX="171.0" layoutY="113.0" prefHeight="37.0" prefWidth="187.0" promptText="First Name" />
+                <TextField fx:id="lastNameField" layoutX="171.0" layoutY="172.0" prefHeight="37.0" prefWidth="187.0" promptText="Last Name" />
+                <TextField fx:id="usernameField" layoutX="171.0" layoutY="222.0" prefHeight="37.0" prefWidth="187.0" promptText="Username" />
+                <TextField fx:id="emailField" layoutX="541.0" layoutY="113.0" prefHeight="37.0" prefWidth="187.0" promptText="Email" />
+                <TextField fx:id="phoneNumberField" layoutX="541.0" layoutY="172.0" prefHeight="37.0" prefWidth="187.0" promptText="Phone Number" />
+                <PasswordField fx:id="passwordField" layoutX="541.0" layoutY="236.0" prefHeight="37.0" prefWidth="187.0" promptText="Password" />
+                <PasswordField fx:id="confirmPasswordField" layoutX="541.0" layoutY="290.0" prefHeight="37.0" prefWidth="187.0" promptText="Confirm Password" />
+
+                <Label fx:id="errorLabel" layoutX="328.0" layoutY="35.0" prefHeight="25.0" prefWidth="187.0" textFill="red" />
+            <Button fx:id="button_create_account" layoutX="320.0" layoutY="413.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="37.0" prefWidth="155.0" style="-fx-background-color: #ffc300;" text="Create Account">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="60.0" layoutY="177.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Last Name:" />
+            <Label layoutX="59.0" layoutY="118.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="First Name:" />
+            <Label layoutX="58.0" layoutY="227.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="User Name:" />
+            <Label layoutX="481.0" layoutY="118.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Email:" />
+            <Label layoutX="398.0" layoutY="177.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Phone Number:" />
+            <Label layoutX="444.0" layoutY="241.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Password:" />
+            <Label layoutX="373.0" layoutY="295.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Confirm Password:" />
+            <Label layoutX="48.0" layoutY="15.0" text="Create Account">
+               <font>
+                  <Font name="Verdana Bold" size="25.0" />
+               </font>
+            </Label>
+
+            
+        </children>
+    </AnchorPane>
+</children>
+</AnchorPane>

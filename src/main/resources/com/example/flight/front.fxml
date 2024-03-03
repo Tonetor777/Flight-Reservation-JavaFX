@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #020035;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flight.FrontController">
+   <children>
+      <AnchorPane prefHeight="680.0" prefWidth="1000.0" style="-fx-background-color: #020035;">
+         <children>
+            <ImageView fitHeight="268.0" fitWidth="263.0" layoutX="152.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="276.0" fitWidth="263.0" layoutX="564.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@admin.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="174.0" layoutY="66.0" prefHeight="110.0" prefWidth="653.0" text="Flight Reservation" textFill="#ffc300">
+               <font>
+                  <Font name="Verdana Bold" size="57.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="355.0" prefWidth="1000.0">
+         <children>
+            <Button fx:id="button_user" layoutX="190.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToUser" prefHeight="73.0" prefWidth="171.0" style="-fx-background-color: #FFC300;" text="User">
+               <font>
+                  <Font name="Arial Bold" size="40.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="button_admin" layoutX="598.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToAdmin" prefHeight="73.0" prefWidth="191.0" style="-fx-background-color: #FFC300;" text="Admin">
+               <font>
+                  <Font name="Arial Bold" size="40.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

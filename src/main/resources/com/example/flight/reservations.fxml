@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flight.ReservationsController">
+
+    <children>
+        <AnchorPane prefHeight="59.0" prefWidth="1000.0" style="-fx-background-color: #020035;">
+            <children>
+                <Button fx:id="button_home" layoutX="712.0" layoutY="11.0" mnemonicParsing="false" onAction="#logOut" prefHeight="37.0" prefWidth="86.0" style="-fx-background-color: #ffc300;" text="LogOut">
+                    <font>
+                        <Font name="Verdana Bold" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="button_addflight" layoutX="202.0" layoutY="11.0" mnemonicParsing="false" onAction="#goToAddFlight" prefHeight="37.0" prefWidth="113.0" style="-fx-background-color: #ffc300;" text="Add Flight">
+                    <font>
+                        <Font name="Verdana Bold" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="button_reservation" layoutX="347.0" layoutY="11.0" mnemonicParsing="false" onAction="#goToReservations" prefHeight="37.0" prefWidth="133.0" style="-fx-background-color: #ffc300;" text="Reservations">
+                    <font>
+                        <Font name="Verdana Bold" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="button_createacc" layoutX="512.0" layoutY="11.0" mnemonicParsing="false" onAction="#goToCreateAccount" prefHeight="37.0" prefWidth="165.0" style="-fx-background-color: #ffc300;" text="Create Acccount">
+                    <font>
+                        <Font name="Verdana Bold" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="button_createacc1" layoutX="45.0" layoutY="11.0" mnemonicParsing="false" onAction="#goToProfile" prefHeight="37.0" prefWidth="126.0" style="-fx-background-color: #ffc300;" text="Profile">
+                    <font>
+                        <Font name="Verdana Bold" size="15.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+      <AnchorPane layoutY="63.0" prefHeight="738.0" prefWidth="1000.0">
+         <children>
+            <TableView fx:id="reservationsTable" layoutX="368.0" layoutY="30.0" prefHeight="405.0" prefWidth="618.0">
+              <columns>
+
+                      <TableColumn fx:id="reservationIdColumn" prefWidth="118.0" text="Reservation Id" />
+                      <TableColumn fx:id="flightNumberColumn" prefWidth="107.0" text="Flight Number" />
+                      <TableColumn fx:id="passengerIdColumn" prefWidth="119.0" text="Passenger Id" />
+                      <TableColumn fx:id="seatNumberColumn" prefWidth="141.0" text="Seat Number" />
+                      <TableColumn fx:id="reservationDateColumn" prefWidth="132.0" text="Reservation Date" />
+
+              </columns>
+            </TableView>
+             <TableView fx:id="passengerTable" layoutX="368.0" layoutY="515.0" prefHeight="77.0" prefWidth="618.0">
+                 <columns>
+                     <TableColumn fx:id="passengerIdTableColumn" prefWidth="113.0" text="Passenger Id" />
+                     <TableColumn fx:id="firstNameTableColumn" prefWidth="100.0" text="First Name" />
+                     <TableColumn fx:id="lastNameTableColumn" prefWidth="98.0" text="Last Name" />
+                     <TableColumn fx:id="emailTableColumn" prefWidth="198.0" text="Email" />
+                     <TableColumn fx:id="phoneNumberTableColumn" prefWidth="108.0" text="Phone Number" />
+                 </columns>
+             </TableView>
+            <Label layoutX="40.0" layoutY="30.0" text="Reservation Id">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="87.0" text="Flight Number">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="143.0" text="Passanger Id">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="515.0" text="Passanger Id">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="filter_reservation" layoutX="177.0" layoutY="31.0" prefHeight="25.0" prefWidth="165.0" />
+            <TextField fx:id="filter_flight_number" layoutX="177.0" layoutY="88.0" prefHeight="25.0" prefWidth="165.0" />
+            <TextField fx:id="filter_passenger_id" layoutX="177.0" layoutY="144.0" prefHeight="25.0" prefWidth="165.0" />
+            <TextField fx:id="filter_passenger" layoutX="177.0" layoutY="516.0" prefHeight="25.0" prefWidth="165.0" />
+            <Button fx:id="button_passanger_info" layoutX="47.0" layoutY="566.0" mnemonicParsing="false" onAction="#passengerInformation" prefHeight="37.0" prefWidth="287.0" style="-fx-background-color: #ffc300;" text="Display Passenger Information">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

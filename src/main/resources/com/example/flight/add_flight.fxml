@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #caf0f8;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flight.AddFlightController">
+   <children>
+      <AnchorPane prefHeight="59.0" prefWidth="600.0" style="-fx-background-color: #020035;">
+         <children>
+            <Button fx:id="button_home" layoutX="712.0" layoutY="11.0" mnemonicParsing="false" onAction="#logOut" prefHeight="37.0" prefWidth="86.0" style="-fx-background-color: #ffc300;" text="LogOut">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_addflight" layoutX="202.0" layoutY="11.0" mnemonicParsing="false" onAction="#goToAddFlight" prefHeight="37.0" prefWidth="113.0" style="-fx-background-color: #ffc300;" text="Add Flight">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_reservation" layoutX="347.0" layoutY="11.0" mnemonicParsing="false" onAction="#goToReservations" prefHeight="37.0" prefWidth="133.0" style="-fx-background-color: #ffc300;" text="Reservations">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_createacc" layoutX="512.0" layoutY="11.0" mnemonicParsing="false" onAction="#goToCreateAccount" prefHeight="37.0" prefWidth="165.0" style="-fx-background-color: #ffc300;" text="Create Acccount">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_createacc1" layoutX="45.0" layoutY="11.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="126.0" style="-fx-background-color: #ffc300;" text="Profile">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="744.0" prefWidth="1000.0">
+         <children>
+            <Label alignment="CENTER" layoutX="48.0" layoutY="131.0" prefHeight="37.0" prefWidth="122.0" text="Flight Number">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="flight_number" layoutX="170.0" layoutY="129.0" prefHeight="40.0" prefWidth="250.0" />
+            <Label alignment="CENTER" layoutX="48.0" layoutY="213.0" prefHeight="37.0" prefWidth="122.0" text="From">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="departure_location" layoutX="170.0" layoutY="211.0" prefHeight="40.0" prefWidth="250.0" />
+            <TextField fx:id="destination" layoutX="170.0" layoutY="288.0" prefHeight="40.0" prefWidth="250.0" />
+            <DatePicker fx:id="date" layoutX="170.0" layoutY="374.0" prefHeight="40.0" prefWidth="250.0" />
+            <Label alignment="CENTER" layoutX="48.0" layoutY="290.0" prefHeight="37.0" prefWidth="122.0" text="To">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="48.0" layoutY="376.0" prefHeight="37.0" prefWidth="122.0" text="Date">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="547.0" layoutY="130.0" prefHeight="37.0" prefWidth="122.0" text="Departure Time">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="560.0" layoutY="213.0" prefHeight="37.0" prefWidth="122.0" text="Arrival Time">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="560.0" layoutY="459.0" prefHeight="37.0" prefWidth="122.0" text="Price">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="departure_time" layoutX="682.0" layoutY="128.0" prefHeight="40.0" prefWidth="250.0" />
+            <TextField fx:id="arrival_time" layoutX="682.0" layoutY="211.0" prefHeight="40.0" prefWidth="250.0" />
+            <TextField fx:id="price" layoutX="682.0" layoutY="457.0" prefHeight="40.0" prefWidth="250.0" />
+            <Button fx:id="button_add" layoutX="682.0" layoutY="531.0" mnemonicParsing="false" onAction="#addFlightInformation" style="-fx-background-color: #ffc300;" text="Add">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="button_cancel" layoutX="820.0" layoutY="531.0" mnemonicParsing="false" onAction="#clearFields" style="-fx-background-color: #ffc300;" text="Cancel">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="message" layoutX="315.0" layoutY="27.0" prefHeight="40.0" prefWidth="371.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="airplane_number" layoutX="682.0" layoutY="290.0" prefHeight="40.0" prefWidth="250.0" />
+            <Label alignment="CENTER" layoutX="547.0" layoutY="292.0" prefHeight="37.0" prefWidth="122.0" text="Airplane Number">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="total_seats" layoutX="682.0" layoutY="374.0" prefHeight="40.0" prefWidth="250.0" />
+            <Label alignment="CENTER" layoutX="547.0" layoutY="376.0" prefHeight="37.0" prefWidth="122.0" text="Total Seats">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

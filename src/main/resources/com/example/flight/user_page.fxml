@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flight.UserPageController">
+   <children>
+      <VBox prefHeight="800.0" prefWidth="1000.0">
+         <children>
+             <AnchorPane prefHeight="59.0" prefWidth="600.0" style="-fx-background-color: #020035;">
+                 <children>
+                     <Button fx:id="button_home" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="37.0" prefWidth="86.0" style="-fx-background-color: #ffc300;" text="Home">
+                         <font>
+                             <Font name="Verdana Bold" size="15.0" />
+                         </font>
+                     </Button>
+                     <Button fx:id="button_addflight" layoutX="115.0" layoutY="11.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="113.0" style="-fx-background-color: #ffc300;" text="Flights">
+                         <font>
+                             <Font name="Verdana Bold" size="15.0" />
+                         </font>
+                     </Button>
+                     <Button fx:id="button_reservation" layoutX="241.0" layoutY="11.0" mnemonicParsing="false" onAction="#goToReserve" prefHeight="37.0" prefWidth="174.0" style="-fx-background-color: #ffc300;" text="Reserve Flight">
+                         <font>
+                             <Font name="Verdana Bold" size="15.0" />
+                         </font>
+                     </Button>
+                 </children>
+             </AnchorPane>
+            <AnchorPane prefHeight="743.0" prefWidth="1000.0">
+               <children>
+                  <Label layoutX="27.0" layoutY="39.0" prefHeight="27.0" prefWidth="48.0" text="From">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+                   <TableView fx:id="flightTable" prefHeight="645.0" prefWidth="980.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+                       <columns>
+                           <TableColumn fx:id="flightNumberColumn" prefWidth="149.0" text="Flight Number" />
+                           <TableColumn fx:id="departureLocationColumn" prefWidth="143.0" text="Departure Location" />
+                           <TableColumn fx:id="destinationColumn" prefWidth="118.0" text="Destination" />
+                           <TableColumn fx:id="dateColumn" prefWidth="102.0" text="Date" />
+                           <TableColumn fx:id="departureTimeColumn" prefWidth="115.0" text="Departure Time" />
+                           <TableColumn fx:id="arrivalTimeColumn" prefWidth="118.0" text="Arrival Time" />
+                           <TableColumn fx:id="totalSeatsColumn" prefWidth="123.0" text="Total Seats" />
+                           <TableColumn fx:id="priceColumn" prefWidth="111.0" text="Price" />
+                       </columns>
+                   </TableView>
+                  <TextField fx:id="filter_from" layoutX="81.0" layoutY="39.0" prefHeight="27.0" prefWidth="187.0" />
+                  <Label layoutX="306.0" layoutY="39.0" prefHeight="27.0" prefWidth="48.0" text="To">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="filter_to" layoutX="339.0" layoutY="39.0" prefHeight="27.0" prefWidth="187.0" />
+               </children></AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
